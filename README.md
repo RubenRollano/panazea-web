@@ -53,7 +53,9 @@ El sitio es 100% estático, lo que permite alojarlo de forma gratuita con CDN gl
 
 ---
 
-## 📝 Personalizaciones Pendientes
+## 📝 Enlaces y Contacto
 
-- **NIF/CIF**: En el pie de página de `index.html` (`línea 204`), sustituye `B-XXXXXXXX` por el CIF definitivo de Panazea Software SLU.
-- **Perfil de LinkedIn**: En la sección de perfil de `index.html` (`línea 177`), confirma o ajusta la URL de tu perfil de LinkedIn.
+- **Correo de contacto**: `ruben.rollano@panazea.net`
+- **Perfil de LinkedIn**: [linkedin.com/in/rubenrollano](https://www.linkedin.com/in/rubenrollano)
+- **Credencial SAP BTP**: [Verificación en Credly](https://www.credly.com/badges/3380ab03-8b4d-43ec-b5f9-6e237483f044)
+
