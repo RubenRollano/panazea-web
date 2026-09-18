@@ -620,7 +620,31 @@ body {
 }
 
 .profile-action {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-cert {
+  background: rgba(230, 194, 15, 0.08);
+  color: var(--panazea-yellow);
+  border: 1px solid rgba(230, 194, 15, 0.35);
+  font-size: 0.82rem;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
   white-space: nowrap;
+}
+
+.btn-cert:hover {
+  background: rgba(230, 194, 15, 0.16);
+  border-color: var(--panazea-yellow);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(230, 194, 15, 0.2);
 }
 
 /* Bloque Contacto */

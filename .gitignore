@@ -6,3 +6,8 @@ Thumbs.db
 
 # Carpeta temporal de recursos raw de marca
 imagotipo/
+
+# Archivos personales / CV
+*.docx
+*.pdf
+
