@@ -5,25 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Panazea Software — Estudio de Desarrollo y Consultoría Tecnológica</title>
   
-  <meta name="description" content="Panazea Software SLU: Estudio de desarrollo de software independiente. Creación de productos propios y consultoría avanzada en arquitectura cloud y ecosistemas SAP. Madrid, España.">
-  <meta name="keywords" content="Panazea Software, Rubén Rollano, desarrollo software, consultoría SAP, arquitectura cloud, Espigalia, software boutique Madrid">
+  <meta name="description" content="Panazea Software SLU: Estudio de desarrollo de software independiente. Productos propios y consultoría avanzada en arquitectura cloud y ecosistemas SAP. Madrid, España.">
+  <meta name="keywords" content="Panazea Software, PanaZea, Rubén Rollano, desarrollo software, consultoría SAP, arquitectura cloud, Espigalia, software boutique Madrid">
   <meta name="author" content="Rubén Rollano">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph / Meta Social -->
+  <!-- Open Graph / Redes Sociales -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://panazea.net/">
   <meta property="og:title" content="Panazea Software — Estudio de Software Independiente">
-  <meta property="og:description" content="Desarrollo de productos digitales propios y servicios de consultoría técnica enterprise.">
+  <meta property="og:description" content="Desarrollo de productos digitales propios y consultoría técnica enterprise.">
+  <meta property="og:image" content="https://panazea.net/assets/panazea-imagotipo.png">
   <meta property="og:locale" content="es_ES">
 
-  <!-- Favicon -->
+  <!-- Favicons -->
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png">
 
-  <!-- Google Fonts: Inter -->
+  <!-- Google Fonts: Audiowide (Marca/Títulos) & Roboto (Texto/Lectura) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -31,13 +33,14 @@
 
   <div class="ambient-glow" aria-hidden="true"></div>
 
-  <!-- Header & Navigation -->
+  <!-- Cabecera y Navegación -->
   <header class="header">
     <div class="container">
       <nav class="nav" aria-label="Navegación principal">
         <a href="#" class="brand" aria-label="Panazea Software - Inicio">
-          <div class="brand-icon" aria-hidden="true">P</div>
-          <span class="brand-title">Panazea Software</span>
+          <img src="assets/panazea-icono.png" alt="Símbolo Panazea" class="brand-icon-img" width="34" height="30">
+          <span class="brand-text">PANA<span class="highlight-z">Z</span>EA</span>
+          <span class="brand-tag">Software Boutique</span>
         </a>
 
         <ul class="nav-links">
@@ -54,27 +57,40 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="container">
-        <div class="hero-pill">
-          <span class="hero-pill-dot" aria-hidden="true"></span>
-          <span>Software Boutique · Madrid, España</span>
-        </div>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-pill">
+              <span class="hero-pill-dot" aria-hidden="true"></span>
+              <span>Software Boutique · Madrid, España</span>
+            </div>
 
-        <h1 class="hero-title">
-          Ingeniería de software con criterio artesanal y escala enterprise.
-        </h1>
+            <h1 class="hero-title">
+              Ingeniería de software con criterio artesanal y <span class="brand-accent">escala enterprise</span>.
+            </h1>
 
-        <p class="hero-description">
-          En <strong>Panazea Software</strong> combinamos el diseño e impulso de productos digitales propios con servicios de consultoría técnica avanzada, arquitectura cloud y desarrollo en ecosistemas corporativos complejos.
-        </p>
+            <p class="hero-description">
+              En <strong>Panazea Software</strong> combinamos el diseño e impulso de productos digitales propios con servicios de consultoría técnica avanzada, arquitectura cloud y desarrollo en ecosistemas corporativos complejos.
+            </p>
 
-        <div class="hero-actions">
-          <a href="#producto" class="btn btn-primary">
-            Ver producto destacado
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-          </a>
-          <a href="mailto:contacto@panazea.net" class="btn btn-secondary">
-            Iniciar conversación
-          </a>
+            <div class="hero-actions">
+              <a href="#producto" class="btn btn-primary">
+                Ver producto destacado
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+              </a>
+              <a href="mailto:contacto@panazea.net" class="btn btn-secondary">
+                Iniciar conversación
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Brand Imagotype Showcase -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-visual-card">
+              <img src="assets/panazea-imagotipo.png" alt="Imagotipo Panazea" class="hero-visual-img" width="240" height="268">
+              <div class="hero-visual-caption">Panazea Software</div>
+              <div class="hero-visual-subcaption">Boutique de Ingeniería y Producto</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -83,7 +99,7 @@
       <div class="section-divider" aria-hidden="true"></div>
     </div>
 
-    <!-- Featured Product Section (Espigalia) -->
+    <!-- Sección Producto Propio (Espigalia) -->
     <section id="producto" class="section">
       <div class="container">
         <div class="section-header">
@@ -123,7 +139,7 @@
       </div>
     </section>
 
-    <!-- Services / Technical Expertise Section -->
+    <!-- Sección Especialización Técnica / Servicios Enterprise -->
     <section id="servicios" class="section">
       <div class="container">
         <div class="section-header">
@@ -163,7 +179,7 @@
             </div>
             <h3 class="card-title">Desarrollo de Producto End-to-End</h3>
             <p class="card-text">
-              De la conceptualización a producción con velocidad y precisión. Creamos aplicaciones web y móviles robustas, cuidando cada detalle de usabilidad, accesibilidad y eficiencia.
+              De la conceptualización a producción con velocidad y precisión. Creamos aplicaciones web robustas, cuidando cada detalle de usabilidad, accesibilidad y eficiencia.
             </p>
             <div class="card-footer">TypeScript · React/Next.js · Node.js · APIs</div>
           </article>
@@ -171,7 +187,7 @@
       </div>
     </section>
 
-    <!-- Studio / Founder Section -->
+    <!-- Sección Sobre el Estudio / Rubén Rollano -->
     <section id="estudio" class="section">
       <div class="container">
         <div class="section-header">
@@ -186,9 +202,9 @@
 
           <div class="profile-info">
             <h3>Rubén Rollano</h3>
-            <div class="profile-role">Fundador & Senior Software Engineer / Solution Architect</div>
+            <div class="profile-role">Fundador & Solution Architect / Senior Software Engineer</div>
             <p class="profile-bio">
-              Panazea Software SLU opera bajo un modelo de estudio unipersonal enfocado en la máxima calidad de entrega. Trabajo mano a mano con empresas y proyectos selectos que valoran la excelencia técnica, la transparencia y el criterio pragmático.
+              Panazea Software SLU opera bajo un modelo de estudio independiente enfocado en la máxima calidad técnica y de entrega. Colaboro mano a mano con organizaciones y proyectos selectos que valoran la excelencia de código, la transparencia y el criterio pragmático.
             </p>
           </div>
 
@@ -202,7 +218,7 @@
       </div>
     </section>
 
-    <!-- Contact Callout -->
+    <!-- Bloque de Contacto -->
     <section id="contacto" class="section">
       <div class="container">
         <div class="contact-strip">
@@ -218,12 +234,12 @@
     </section>
   </main>
 
-  <!-- Footer with Legal Data -->
+  <!-- Footer con Datos Legales e Identidad -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div>
-          <div class="footer-legal-name">Panazea Software SLU</div>
+          <div class="footer-brand-title">PANAZEA SOFTWARE SLU</div>
           <div class="footer-meta">
             Sociedad Unipersonal · NIF/CIF: B-XXXXXXXX<br>
             Domicilio social: Madrid, España · Correo: <a href="mailto:contacto@panazea.net" style="color: var(--text-secondary); text-decoration: none;">contacto@panazea.net</a>
@@ -232,7 +248,7 @@
 
         <div class="footer-right">
           <div>© 2026 Panazea Software SLU. Todos los derechos reservados.</div>
-          <div><span class="footer-badge">Desarrollo y hosting ultra-eficiente sin cookies de rastreo</span></div>
+          <div><span class="footer-badge">Desarrollo ultra-eficiente sin cookies de rastreo</span></div>
         </div>
       </div>
     </div>

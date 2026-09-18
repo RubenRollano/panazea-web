@@ -1,11 +1,53 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="16" fill="#0A0A0C"/>
-  <rect x="1" y="1" width="62" height="62" rx="15" stroke="rgba(255,255,255,0.12)" stroke-width="2"/>
-  <path d="M22 18H36C43.732 18 48 22.268 48 29C48 35.732 43.732 40 36 40H30V46H22V18ZM30 33H35.5C39.0899 33 40.5 31.41 40.5 29C40.5 26.59 39.0899 25 35.5 25H30V33Z" fill="url(#p_gradient)"/>
-  <defs>
-    <linearGradient id="p_gradient" x1="22" y1="18" x2="48" y2="46" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFFFF"/>
-      <stop offset="1" stop-color="#94A3B8"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <!-- Subtle dark canvas for maximum contrast across browser tabs -->
+  <rect width="128" height="128" rx="28" fill="#0A0A0F"/>
+  <rect x="1.5" y="1.5" width="125" height="125" rx="26.5" stroke="rgba(76, 171, 213, 0.25)" stroke-width="3"/>
+  
+  <g transform="translate(14, 16) scale(0.8)">
+    <!-- Connecting Purple Lines (Z shape) -->
+    <path d="M 22 22 L 98 42 L 24 82 L 96 102" stroke="#390094" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Central Gold/Yellow Connector -->
+    <line x1="48" y1="56" x2="74" y2="64" stroke="#E6C20F" stroke-width="4.5" stroke-linecap="round"/>
+    
+    <!-- Central Gold Discs -->
+    <g transform="translate(48, 56)">
+      <ellipse cx="0" cy="2" rx="6" ry="3.5" fill="#917522"/>
+      <ellipse cx="0" cy="0" rx="6" ry="3.5" fill="#E6C20F"/>
+      <ellipse cx="0" cy="0" rx="4" ry="2.2" fill="#FFFFFF"/>
+    </g>
+    <g transform="translate(74, 64)">
+      <ellipse cx="0" cy="2" rx="6" ry="3.5" fill="#917522"/>
+      <ellipse cx="0" cy="0" rx="6" ry="3.5" fill="#E6C20F"/>
+      <ellipse cx="0" cy="0" rx="4" ry="2.2" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Node 1: Top Left (small) -->
+    <g transform="translate(20, 20)">
+      <ellipse cx="0" cy="5" rx="11" ry="6.5" fill="#390094"/>
+      <ellipse cx="0" cy="0" rx="11" ry="6.5" fill="#4CABD5"/>
+      <ellipse cx="0" cy="0" rx="8" ry="4.5" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Node 2: Top Right (large) -->
+    <g transform="translate(98, 42)">
+      <ellipse cx="0" cy="9" rx="17" ry="10" fill="#390094"/>
+      <ellipse cx="0" cy="0" rx="17" ry="10" fill="#4CABD5"/>
+      <ellipse cx="0" cy="0" rx="13" ry="7.5" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Node 3: Bottom Left (medium) -->
+    <g transform="translate(22, 82)">
+      <ellipse cx="0" cy="8" rx="15" ry="9" fill="#390094"/>
+      <ellipse cx="0" cy="0" rx="15" ry="9" fill="#4CABD5"/>
+      <ellipse cx="0" cy="0" rx="11" ry="6.5" fill="#FFFFFF"/>
+    </g>
+
+    <!-- Node 4: Bottom Right (large) -->
+    <g transform="translate(96, 102)">
+      <ellipse cx="0" cy="10" rx="18" ry="10.5" fill="#390094"/>
+      <ellipse cx="0" cy="0" rx="18" ry="10.5" fill="#4CABD5"/>
+      <ellipse cx="0" cy="0" rx="14" ry="8" fill="#FFFFFF"/>
+    </g>
+  </g>
 </svg>
