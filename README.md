@@ -1,6 +1,6 @@
-# Panazea Software SLU — Web Corporativa
+# Panazea Software — Web Corporativa
 
-Sitio web corporativo minimalista, de alto rendimiento y diseño premium para **Panazea Software SLU** ([panazea.net](https://panazea.net)).
+Sitio web corporativo minimalista, de alto rendimiento y diseño premium para **Panazea Software** ([panazea.net](https://panazea.net)).
 
 ---
 
@@ -8,8 +8,9 @@ Sitio web corporativo minimalista, de alto rendimiento y diseño premium para **
 
 - **HTML5 semántico** estructurado para SEO y accesibilidad.
 - **CSS moderno** sin dependencias externas ni frameworks pesados.
-- **Zero npm / Zero build step**: Carga instantánea, peso mínimo (< 20 KB total) y máxima puntuación en Google Core Web Vitals / Lighthouse (100/100).
-- **Estética**: Inspirada en estándares de diseño de *Linear* y *Vercel* (dark mode pulido, tipografía Inter, microdetalles cuidados).
+- **Zero npm / Zero build step**: Carga instantánea, peso mínimo (< 25 KB total) y máxima puntuación en Google Core Web Vitals / Lighthouse (100/100).
+- **Identidad de Marca**: Basada en la Guía de Uso de Marca oficial de PanaZea (fondo blanco y superficies limpias, tipografías Audiowide y Roboto, colores oficiales #4CABD5, #390094 y #E6C20F).
+
 
 ---
 
