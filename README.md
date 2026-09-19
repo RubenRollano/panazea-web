@@ -54,6 +54,22 @@ El sitio es 100% estático, lo que permite alojarlo de forma gratuita con CDN gl
 
 ---
 
+## 🌐 Ecosistema y Productos Propios
+
+Panazea Software combina la consultoría enterprise de alto nivel con la creación de productos digitales propios bajo una arquitectura SaaS desacoplada:
+
+| Plataforma | Dominio | Infraestructura | Propósito |
+| --- | --- | --- | --- |
+| **Panazea Software** | `https://panazea.net` | Cloudflare Pages | Web corporativa y consultoría de ingeniería |
+| **Espigalia (Landing)** | `https://espigalia.com` | Cloudflare Pages | Web comercial pública del producto flagship |
+| **Espigalia (App)** | `https://app.espigalia.com` | Render | Aplicación SaaS (IA, nutrición, Garmin) |
+
+### Enlaces Bidireccionales:
+- **En `panazea.net`**: La sección *Producto Propio* presenta a Espigalia y enlaza directamente a `https://espigalia.com`.
+- **En `espigalia.com`**: La cabecera incluye el distintivo `de Panazea` y el pie acredita a *Panazea Software* con enlace de vuelta a `https://panazea.net`.
+
+---
+
 ## 📝 Enlaces y Contacto
 
 - **Correo de contacto**: `ruben.rollano@panazea.net`
