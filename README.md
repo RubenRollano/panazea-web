@@ -64,9 +64,9 @@ Panazea Software combina la consultoría enterprise de alto nivel con la creaci�
 | **Espigalia (Landing)** | `https://espigalia.com` | Cloudflare Pages | Web comercial pública del producto flagship |
 | **Espigalia (App)** | `https://app.espigalia.com` | Render | Aplicación SaaS (IA, nutrición, Garmin) |
 
-### Enlaces Bidireccionales:
-- **En `panazea.net`**: La sección *Producto Propio* presenta a Espigalia y enlaza directamente a `https://espigalia.com`.
-- **En `espigalia.com`**: La cabecera incluye el distintivo `de Panazea` y el pie acredita a *Panazea Software* con enlace de vuelta a `https://panazea.net`.
+### Enlaces y Relación:
+- **En `panazea.net`**: La sección *Producto Propio* presenta a Espigalia y enlaza a `https://espigalia.com`.
+- **En `espigalia.com`**: La web tiene entidad propia e independiente, figurando Panazea Software SLU de forma discreta únicamente en el pie de página legal.
 
 ---
 
