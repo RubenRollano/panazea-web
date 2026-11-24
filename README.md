@@ -14,43 +14,15 @@ Sitio web corporativo minimalista, de alto rendimiento y diseño premium para **
 
 ---
 
-## 🚀 Despliegue en Producción (Cloudflare Pages o Vercel)
+## 🚀 Despliegue en Producción (AWS)
 
-El sitio es 100% estático, lo que permite alojarlo de forma gratuita con CDN global y certificados SSL automáticos.
+El sitio es 100% estático y se sirve desde **AWS**: un bucket privado de S3 (`panazea-web`, `eu-north-1`) detrás de CloudFront (distribución `E321OBTV7EW240`, certificado de ACM). El DNS de `panazea.net` está en **Route 53**. Salió de Cloudflare porque en España los bloqueos por rango de IP en las noches de partido de La Liga afectan a Cloudflare.
 
-### Opción A: Despliegue en Cloudflare Pages (Recomendado)
-
-1. **Subir a GitHub**:
-   - Crea un repositorio en tu cuenta de GitHub (ejemplo: `panazea-web`).
-   - Sube tu código (ver sección de Git abajo).
-
-2. **Conectar con Cloudflare Pages**:
-   - Accede al panel de [Cloudflare Dashboard](https://dash.cloudflare.com/) > **Workers & Pages** > **Create application** > pestaña **Pages** > **Connect to Git**.
-   - Selecciona el repositorio `panazea-web`.
-   - En **Build settings**:
-     - *Framework preset*: `None`
-     - *Build command*: (dejar vacío)
-     - *Build output directory*: `/` (o déjalo en la raíz)
-   - Pulsa **Save and Deploy**.
-
-3. **Asignar el dominio `panazea.net`**:
-   - En la página del proyecto en Cloudflare Pages, ve a **Custom domains** > **Set up a custom domain**.
-   - Escribe `panazea.net` y `www.panazea.net`.
-   - Si tu dominio ya está gestionado en Cloudflare DNS, los registros CNAME se crean automáticamente con un solo clic. Si está en otro registrador, Cloudflare te dará los registros CNAME/DNS a añadir.
-
----
-
-### Opción B: Despliegue en Vercel
-
-1. **Subir a GitHub** (igual que en la Opción A).
-2. **Importar en Vercel**:
-   - Entra en [vercel.com](https://vercel.com) > **Add New Project** > Importar `panazea-web`.
-   - Framework Preset: **Other**.
-   - Pulsa **Deploy**.
-3. **Asignar el dominio `panazea.net`**:
-   - Ve a **Project Settings** > **Domains**.
-   - Añade `panazea.net` y `www.panazea.net`.
-   - Vercel te indicará el registro `A` (`76.76.21.21`) o `CNAME` (`cname.vercel-dns.com`) para tu DNS.
+- **Despliegue automático:** cada push a `main` ejecuta `.github/workflows/desplegar.yml`, que sincroniza `index.html`, `styles.css`, los favicons y `assets/` con S3 y vacía la caché de CloudFront. No hay paso de compilación. Un fichero nuevo que deba publicarse se añade a las listas `--include` del workflow.
+- **Credenciales:** los secretos `AWS_ACCESS_KEY_ID` y `AWS_SECRET_ACCESS_KEY` del repositorio son del usuario `panazea-web-deploy`, que solo puede escribir en ese bucket y crear invalidaciones en esa distribución.
+- **`www.panazea.net`** redirige con 301 a `https://panazea.net` mediante la función de CloudFront `panazea-web-peticion`. Una ruta que no existe devuelve `index.html` con 404.
+- **Correo:** `panazea.net` usa Google Workspace; sus registros (MX, SPF, DKIM y DMARC) viven en la zona de Route 53 y no deben tocarse al cambiar la web.
+- **Registrador:** DonDominio, con los servidores de nombres de Route 53.
 
 ---
 
@@ -60,8 +32,8 @@ Panazea Software combina la consultoría enterprise de alto nivel con la creaci�
 
 | Plataforma | Dominio | Infraestructura | Propósito |
 | --- | --- | --- | --- |
-| **Panazea Software** | `https://panazea.net` | Cloudflare Pages | Web corporativa y consultoría de ingeniería |
-| **Espigalia (Landing)** | `https://espigalia.com` | Cloudflare Pages | Web comercial pública del producto flagship |
+| **Panazea Software** | `https://panazea.net` | AWS (S3 + CloudFront) | Web corporativa y consultoría de ingeniería |
+| **Espigalia (Landing)** | `https://espigalia.com` | AWS (S3 + CloudFront + Lambda) | Web comercial pública del producto flagship |
 | **Espigalia (App)** | `https://app.espigalia.com` | Render | Aplicación SaaS (IA, nutrición, Garmin) |
 
 ### Enlaces y Relación:
