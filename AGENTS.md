@@ -29,8 +29,8 @@ Panazea Software combina más de 20 años de experiencia en arquitectura tecnol�
 
 | Entidad | Dominio | Alojamiento | Repositorio |
 | --- | --- | --- | --- |
-| **Panazea Software (Web Corporativa)** | `https://panazea.net`<br>`https://www.panazea.net` | Cloudflare Pages | `RubenRollano/panazea-web` (rama `main`) |
-| **Espigalia (Web Pública / Landing)** | `https://espigalia.com`<br>`https://www.espigalia.com` | Cloudflare Pages | `RubenRollano/Espigalia` (`apps/landing`) |
+| **Panazea Software (Web Corporativa)** | `https://panazea.net`<br>`https://www.panazea.net` | AWS (S3 + CloudFront, DNS en Route 53) | `RubenRollano/panazea-web` (rama `main`) |
+| **Espigalia (Web Pública / Landing)** | `https://espigalia.com`<br>`https://www.espigalia.com` | AWS (S3 + CloudFront + Lambda) | `RubenRollano/Espigalia` (`apps/landing`) |
 | **Espigalia (Aplicación SaaS)** | `https://app.espigalia.com` | Render | `RubenRollano/Espigalia` (raíz Next.js) |
 
 ---
